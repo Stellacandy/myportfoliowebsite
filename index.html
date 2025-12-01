@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YOUR NAME — Portfolio</title>
+  <meta name="description" content="Portfolio of YOUR NAME — Web developer / Designer for hire." />
+  <style>
+    body {font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:0; padding:0; color:#111;}
+    header{padding:28px 18px; text-align:center; background:#f7f7f7}
+    .container{max-width:900px;margin:28px auto;padding:0 18px;}
+    h1{margin:0 0 8px;font-size:24px}
+    p.lead{margin:0 0 12px;color:#444}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .card{border:1px solid #eee;padding:10px;border-radius:10px;background:#fff}
+    img{width:100%;height:auto;border-radius:8px;display:block}
+    .cta{display:block;margin:18px 0;padding:12px;text-align:center;border-radius:10px;text-decoration:none;border:1px solid #111}
+    footer{padding:18px;text-align:center;color:#666;font-size:14px}
+    @media(min-width:600px){h1{font-size:32px}.projects{grid-template-columns:repeat(3,1fr)}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>YOUR NAME</h1>
+    <p class="lead">I design & build web experiences for businesses. Available for remote contracts.</p>
+    <a class="cta" href="#contact">Book a free audit →</a>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Selected Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <img src="project1.jpg" alt="Project 1 screenshot">
+          <h3>Project 1 — Short Title</h3>
+          <p>One-line result: increased conversions by X% / launched in Y days.</p>
+        </div>
+        <div class="card">
+          <img src="project2.jpg" alt="Project 2 screenshot">
+          <h3>Project 2 — Short Title</h3>
+          <p>Short summary of work & outcome.</p>
+        </div>
+        <div class="card">
+          <img src="project3.jpg" alt="Project 3 screenshot">
+          <h3>Project 3 — Short Title</h3>
+          <p>Short summary of work & outcome.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:20px">
+      <h2>About</h2>
+      <p>I’m YOUR NAME, a web developer/designer specializing in [your specialty]. I help clients turn ideas into measurable revenue.</p>
+    </section>
+
+    <section id="contact" style="margin-top:20px">
+      <h2>Contact</h2>
+      <p>Prefer email? <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>Or fill this quick form: <a href="https://forms.gle/YOUR_GOOGLE_FORM" target="_blank">Send a project brief</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> YOUR NAME — <a href="https://yourusername.github.io" target="_blank">yourusername.github.io</a>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
